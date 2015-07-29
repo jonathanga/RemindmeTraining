@@ -63,6 +63,7 @@
                 android:layout_weight="2">
 
                 <ImageView
+                    android:onClick="compartirFacebook"
                     android:clickable="true"
                     android:layout_margin="5dp"
                     android:src="@drawable/facebook"
