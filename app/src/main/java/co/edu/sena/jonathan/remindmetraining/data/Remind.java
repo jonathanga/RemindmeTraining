@@ -5,16 +5,16 @@ package co.edu.sena.jonathan.remindmetraining.data;
  */
 public class Remind {
 
-    private String id;
+    private int id;
     private String name;
     private String urlFoto;
     private String urlAudio;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
