@@ -7,7 +7,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1"
+        android:background="@color/color_azul"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/logo_solo"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:src="@drawable/remind"/>
+
+    </LinearLayout>
 
     <GridView
         android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -27,10 +43,12 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <Button
+        <ImageView
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/main_bt_camara"
+            android:src="@drawable/camara"
             />
 
     </LinearLayout>

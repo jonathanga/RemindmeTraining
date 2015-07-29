@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.sena.jonathan.remindmetraining.DetalleActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_azul"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/logo_solo"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:src="@drawable/remind"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/detalle_img_foto"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/detalle_img_escuchar"
+            android:src="@drawable/escuchar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/detalle_img_facebook"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/detalle_img_twitter"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/instagram"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/detalle_img_instagram"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/flickr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/detalle_img_flickr"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:onClick="eliminarFoto"
+                android:id="@+id/detalle_img_eliminar"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/eliminar"
+                android:background="@color/color_azul"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
